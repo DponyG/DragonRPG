@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 8
+  serializedVersion: 9
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -39,6 +39,7 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -54,11 +55,10 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
-    serializedVersion: 9
+    serializedVersion: 10
     m_Resolution: 2
     m_BakeResolution: 40
-    m_TextureWidth: 1024
-    m_TextureHeight: 1024
+    m_AtlasSize: 1024
     m_AO: 0
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
@@ -188,6 +188,21 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 41.915
       objectReference: {fileID: 0}
+    - target: {fileID: 114436689786708360, guid: 2cd85c7a997bbbf43936edf03896b332,
+        type: 2}
+      propertyPath: attackCursor
+      value: 
+      objectReference: {fileID: 2800000, guid: 1dbb1ed8f1123c54892c94eb5b14d0e0, type: 3}
+    - target: {fileID: 114436689786708360, guid: 2cd85c7a997bbbf43936edf03896b332,
+        type: 2}
+      propertyPath: unknownCursor
+      value: 
+      objectReference: {fileID: 2800000, guid: 5c3d5ef8e186dd548a7ae6599145930f, type: 3}
+    - target: {fileID: 114436689786708360, guid: 2cd85c7a997bbbf43936edf03896b332,
+        type: 2}
+      propertyPath: walkCursor
+      value: 
+      objectReference: {fileID: 2800000, guid: cb82383b5df823d4faca5790feb87afc, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2cd85c7a997bbbf43936edf03896b332, type: 2}
   m_IsPrefabParent: 0
@@ -851,6 +866,26 @@ Prefab:
     - target: {fileID: 4518202741321338, guid: 809c9524a08ce7646965b3ebeb02fa39, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114542227220228676, guid: 809c9524a08ce7646965b3ebeb02fa39,
+        type: 2}
+      propertyPath: m_MovingTurnSpeed
+      value: 3600
+      objectReference: {fileID: 0}
+    - target: {fileID: 114542227220228676, guid: 809c9524a08ce7646965b3ebeb02fa39,
+        type: 2}
+      propertyPath: m_StationaryTurnSpeed
+      value: 1800
+      objectReference: {fileID: 0}
+    - target: {fileID: 114542227220228676, guid: 809c9524a08ce7646965b3ebeb02fa39,
+        type: 2}
+      propertyPath: m_MoveSpeedMultiplier
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114542227220228676, guid: 809c9524a08ce7646965b3ebeb02fa39,
+        type: 2}
+      propertyPath: m_AnimSpeedMultiplier
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 809c9524a08ce7646965b3ebeb02fa39, type: 2}

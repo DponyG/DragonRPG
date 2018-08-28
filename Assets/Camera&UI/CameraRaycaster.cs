@@ -18,6 +18,7 @@ public class CameraRaycaster : MonoBehaviour
     }
 
     Layer m_layerHit;
+
     public Layer layerHit
     {
         get { return m_layerHit; }
